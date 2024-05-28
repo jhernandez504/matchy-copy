@@ -44,7 +44,18 @@ function replace(array, string, replacement) {
 //////////////////////////////////////////////////////////////////////
 // Step 3 - Remove ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-
+function remove(array, string) {
+    //for loop to over array
+    for (let i = 0; i < array.length; i++) {
+        //if string is equal to indexes name
+        if (string === array[i]['name']){
+            //removes index in array
+                array.splice(i, 1);
+        }
+    }
+    //returns null if loop passes 
+    return null;
+}
 
 
 //////////////////////////////////////////////////////////////////////
