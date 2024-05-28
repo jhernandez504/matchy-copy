@@ -62,6 +62,7 @@ function remove(array, string) {
 // Step 4 - Add ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 function add(array, object) {
+    // if obj has name + length > 0, obj has species + length > 0, name search in array = null
     if (object.name.length > 0 && object.species.length > 0 && search(array, object['name']) === null) {
         //if all conditions pass, push new animal obj to array
         array.push(object);
