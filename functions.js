@@ -12,15 +12,35 @@
 //////////////////////////////////////////////////////////////////////
 // Step 1 - Search ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-
-
+//function search that takes in array and string
+function search(array, string) {
+    //for loop to over array
+    for (let i = 0; i < array.length; i++) {
+        //if string is equal to indexes name
+        if (string === array[i]['name']){
+            //returns animal obj at that array index
+                return array[i];
+        }
+    }
+    //returns null if loop passes 
+    return null;
+}
 
 //////////////////////////////////////////////////////////////////////
 // Step 2 - Replace //////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-
-
-
+function replace(array, string, replacement) {
+    //for loop to over array
+    for (let i = 0; i < array.length; i++) {
+        //if string is equal to indexes name
+        if (string === array[i]['name']){
+            //modifies obj at array index and replacing with replacement argument
+                array[i] = replacement;
+        }
+    }
+    //returns null if loop passes 
+    return null;
+}
 //////////////////////////////////////////////////////////////////////
 // Step 3 - Remove ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
